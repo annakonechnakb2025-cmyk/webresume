@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="theme-toggle" aria-label="Перемкнути тему">
+        🌙 Нічна тема
+    </button>
+    <header class="site-header" style="border-top: 5px solid #795438;">
+        <h1>Конечна Анна Федорівна</h1>
+        <p>Cybersecurity Enthusiast | Digital Security & Threat Analysis</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Професійний профіль</h2>
+            <p>
+                Майбутня фахівчиня з кібербезпеки, зацікавлена в дослідженні цифрових загроз,
+                аналізі підозрілої активності та захисті конфіденційної інформації.
+                Мене приваблює дослідницький аспект інформаційної безпеки: пошук закономірностей,
+                аналіз цифрових слідів і розуміння механізмів, за допомогою яких виникають кіберзагрози.
+                Прагну розвиватися в напрямку Security Operations та Threat Intelligence.
+            </p>
+        </section>
+
+        <section>
+            <h2>Освіта</h2>
+            <div>Національний університет «Львівська політехніка»</div>
+            <div>Спеціальність: «Кібербезпека»</div>
+        </section>
+
+        <section id="experience" class="card">
+            <h2>Досвід роботи</h2>
+            <div>Junior Cybersecurity Intern (навчальне стажування)</div>
+            <div>CyberShield IT Solutions</div>
+            <div>Червень 2026 — Серпень 2026</div>
+            <ul>
+                <li>Ознайомлення з основними принципами інформаційної безпеки та захисту даних.</li>
+                <li>Аналіз типових кіберзагроз і способів їх запобігання.</li>
+                <li>Вивчення методів виявлення підозрілої активності в інформаційних системах.</li>
+                <li>Підготовка рекомендацій щодо безпечного використання цифрових сервісів.</li>
+                <li>Робота з технічною документацією та оформлення результатів аналізу.</li>
+            </ul>
+
+        </section>
+
+        <section id="skills" class="card">
+            <h2>Технічні навички</h2>
+            <ul>
+                <li>Програмування: Python, базові алгоритми та структури даних.</li>
+                <li>Вебтехнології: HTML5, CSS3, адаптивний вебдизайн.</li>
+                <li>Інструменти розробки: Git, GitHub.</li>
+                <li>Інформаційна безпека: базові принципи захисту інформації, цифрової приватності та контролю доступу.</li>
+
+            </ul>
+        </section>
+
+        <section id="soft-skills" class="card">
+            <h2>Особисті навички</h2>
+            <ul>
+                <li>Аналітичне та критичне мислення.</li>
+                <li>Уважність до деталей.</li>
+                <li>Вміння системно розв'язувати завдання.</li>
+                <li>Самоорганізація та відповідальність.</li>
+                <li>Готовність навчатися й освоювати нові технології.</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>Проєкти для портфоліо</h2>
+            <ul>
+                <li>
+                    CyberWatch — концепція платформи моніторингу кіберзагроз
+                    <div>
+                        Ідея інформаційної панелі для представлення поширених кіберзагроз,
+                        рівнів ризику та рекомендацій із цифрової безпеки.
+                    </div>
+                </li>
+                <li>
+                    Privacy Guide — довідник цифрової приватності
+                    <div>
+                        Концепція вебресурсу з рекомендаціями щодо захисту персональних даних,
+                        безпеки облікових записів і відповідального використання цифрових сервісів.
+                    </div>
+                </li>
+            </ul>
+            <p>Обидва проєкти заплановані до реалізації.</p>
+        </section>
+
+        <section id="contacts" class="card">
+            <h2>Контакти</h2>
+            <div>Email: anna.konechna.kb.2025@lpnu.ua</div>
+            <div>
+                GitHub:
+                <a href="https://github.com/annakonechnakb2025-cmyk">
+                    Мій профіль GitHub
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Конечна Анна Федорівна</p>
+
+        <div id="browser-info">
+            Інформація про браузер завантажується...
+        </div>
+
+        <section id="reviews" class="card">
+            <h2>Відгуки роботодавців</h2>
+            <div id="comments-list">
+                Завантаження коментарів...
+            </div>
+        </section>
+    </footer>
+
+    <div id="feedback-modal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-content" role="dialog"
+             aria-modal="true" aria-labelledby="feedback-title">
+
+            <button type="button" id="close-modal"
+                    class="close-modal" aria-label="Закрити">
+                &times;
+            </button>
+
+            <h2 id="feedback-title">Залиште відгук</h2>
+            <p>Поділіться своїми враженнями або залиште повідомлення.</p>
+
+            <form action="https://formspree.io/f/mnppqejp"
+                  method="POST">
+                <label for="feedback-name">Ім’я</label>
+                <input type="text"
+                       id="feedback-name"
+                       name="name"
+                       autocomplete="name"
+                       required>
+
+                <label for="feedback-email">Email</label>
+                <input type="email"
+                       id="feedback-email"
+                       name="email"
+                       autocomplete="email"
+                       required>
+
+                <label for="feedback-phone">Номер телефону</label>
+                <input type="tel"
+                       id="feedback-phone"
+                       name="phone"
+                       autocomplete="tel">
+
+                <label for="feedback-message">Повідомлення</label>
+                <textarea id="feedback-message"
+                          name="message"
+                          rows="4"
+                          required></textarea>
+
+                <button type="submit" class="submit-feedback">
+                    Надіслати
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
